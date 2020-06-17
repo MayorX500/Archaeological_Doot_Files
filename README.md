@@ -1,4 +1,5 @@
 # Archaeological Doot Files
+![alt text](https://github.com/MajorX500/Archaeological_Doot_Files/tree/master/stuff/screenshot.png "Screenshot")
 
  MajorX500 DootFiles
 - [Bspwm](https://github.com/MajorX500/Archaeological_Doot_Files/tree/master/bspwm)
@@ -9,5 +10,7 @@
 - [Picom](https://github.com/MajorX500/Archaeological_Doot_Files/tree/master/picom)
 - [Tint2](https://github.com/MajorX500/Archaeological_Doot_Files/tree/master/tint2)
 - [Zsh](https://github.com/MajorX500/Archaeological_Doot_Files/tree/master/zsh)
+- [Spells](https://github.com/MajorX500/Archaeological_Doot_Files/tree/master/spells)
 
-[![kindpng-5609726.png](https://i.postimg.cc/QtTTJyW2/kindpng-5609726.png)](https://postimg.cc/9Rc0W1bb)
+
+![alt text](https://github.com/MajorX500/Archaeological_Doot_Files/tree/master/stuff/bg.png "END")
