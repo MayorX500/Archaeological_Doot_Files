@@ -568,7 +568,7 @@ background #000000
 
 #: The foreground and background colors
 
-background_opacity 0.6
+background_opacity 0.5
 
 #: The opacity of the background. A number between 0 and 1, where 1 is
 #: opaque and 0 is fully transparent.  This will only work if
@@ -655,83 +655,104 @@ dim_opacity 0
 
 
 # black
-color0   #000000
-color8   #737475
+#color0   #000000
+#color8   #737475
 
 # red
-color1   #e31a1c
-color9   #e31a1c
+#color1   #e31a1c
+#color9   #e31a1c
 
 # green
-color2   #00da87
-color10  #00d294
+#color2   #00da87
+#color10  #00d294
 
 # yellow
-color3   #7bd609
-color11  #7bd609
+#color3   #7bd609
+#color11  #7bd609
 
 # blue
-color4   #0de007
-color12  #27e007
+#color4   #0de007
+#color12  #27e007
 
 # magenta
-color5   #756bb1
-color13  #756bb1
+#color5   #756bb1
+#color13  #756bb1
 
 # cyan
-color6   #ff0000
-color14  #ff1212
+#color6   #ff0000
+#color14  #ff1212
 
 # white
-color7   #b7b8b9
-color15  #fcfdfe
+#color7   #b7b8b9
+#color15  #fcfdfe
 
+##############Color2################
 
+# black
+color0 #4e4e4e
+color8 #545054
+
+# red
+color1 #d71616
+color9 #ef8684
+
+# green
+color2 #00e100
+color10 #50fc50
+
+# yellow
+color3 #bc5819
+color11 #d75e2f
+
+# blue
+color4 #5555c9
+color12 #1b20bc
+
+# magenta
+color5 #9b14cb
+color13 #f854f8
+
+# cyan
+color6 #08dada
+color14 #22ed9b
+
+# white
+color7 #8b8b8b
+color15 #ffffff
 
 ######### DefaultColor #############
-
-
-
 # color0 #000000
 # color8 #767676
 
 #: black
-
 # color1 #cc0403
 # color9 #f2201f
 
 #: red
-
 # color2  #19cb00
 # color10 #23fd00
 
 #: green
-
 # color3  #cecb00
 # color11 #fffd00
 
 #: yellow
-
 # color4  #0d73cc
 # color12 #1a8fff
 
 #: blue
-
 # color5  #cb1ed1
 # color13 #fd28ff
 
 #: magenta
-
 # color6  #0dcdcd
 # color14 #14ffff
 
 #: cyan
-
 # color7  #dddddd
 # color15 #ffffff
 
 #: white
-
 # mark1_foreground black
 
 #: Color for marks of type 1
@@ -984,7 +1005,7 @@ color15  #fcfdfe
 
 #:     map ctrl+f>2 set_font_size 20
 
-# kitty_mod ctrl+shift
+kitty_mod ctrl+shift
 
 #: The value of kitty_mod is used as the modifier for all default
 #: shortcuts, you can change it in your kitty.conf to change the
@@ -1156,9 +1177,9 @@ color15  #fcfdfe
 #: You can change the font size for all top-level kitty OS windows at
 #: a time or only the current one.
 
-# map kitty_mod+equal     change_font_size all +2.0
-# map kitty_mod+minus     change_font_size all -2.0
-# map kitty_mod+backspace change_font_size all 0
+map kitty_mod+plus     change_font_size all +2.0
+map kitty_mod+minus     change_font_size all -2.0
+map kitty_mod+backspace change_font_size all 0
 
 #: To setup shortcuts for specific font sizes::
 

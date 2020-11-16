@@ -13,8 +13,16 @@ Plug 'preservim/nerdtree'
 " Auto Pair
 Plug 'jiangmiao/auto-pairs'
 
-" ZeR0's Config
+" Rust Autocomplete
+Plug 'sebastianmarkow/deoplete-rust'
 
+" Python Autocomplete
+Plug 'deoplete-plugins/deoplete-jedi'
+
+" Themes
+Plug 'artanikin/vim-synthwave84'
+
+" ZeR0's Config
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-clang'
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"

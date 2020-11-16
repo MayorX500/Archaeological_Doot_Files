@@ -1,3 +1,7 @@
 source ~/.config/nvim/plugins.vim
 
-colorscheme archman
+
+"colorscheme neon
+"colorscheme syntwave
+colorscheme contrasted 
+hi Normal guibg=NONE ctermbg=NONE

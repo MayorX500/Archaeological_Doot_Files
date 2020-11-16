@@ -1,0 +1,1 @@
+plugins=(... colored-man-pages)
