@@ -1,0 +1,55 @@
+// vim: syntax=css
+* {
+	background-color: transparent;
+	background-black: #021b21;
+	accent-color: #c0b18b;
+	color: #f7e6ff;
+	prompt-color: #1a2b41;
+	font: "Firacode 10";
+}
+
+element selected {
+	color: @accent-color;
+}
+
+mainbox {
+	orientation: horizontal;
+}
+
+listview {
+	layout: horizontal;
+}
+
+entry {
+	width: 100px;
+	color: @prompt-color;
+	height: 100%;
+}
+
+element {
+	padding: 5 5;
+
+}
+
+inputbar {
+	background-color: @accent-color;
+	color: @prompt-color;
+	border-radius: 5px;
+	padding: 5 0;
+}
+
+window {
+	background-color: @background-black;
+	border-radius: 7px;
+	width:300px;
+	location: north;
+	y-offset: 10px;
+	width: 1000px;
+	height: 28px;
+}
+
+prompt {
+	padding:0 5;
+	color: @prompt-color;
+	height: 100%;
+}

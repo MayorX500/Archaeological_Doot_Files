@@ -1,0 +1,7 @@
+#!bin/bash    
+    
+sh $HOME/.config/polybar/launch.sh &    
+setxkbmap pt &    
+pkill -USR1 -x sxhkd &    
+picom --experimental-backends --backend glx --xrender-sync-fence &    
+xsetroot -cursor_name left_ptr & 

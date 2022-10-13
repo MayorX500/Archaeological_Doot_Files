@@ -1,16 +1,46 @@
-#! /bin/sh
-
-bspc monitor -d I II III IV V VI VII VIII IX X
-
-bspc config border_width         0
-bspc config window_gap          6
-
-bspc config split_ratio          0.52
-bspc config borderless_monocle   true
-bspc config gapless_monocle      true
-
-bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a Chromium desktop='^2'
-bspc rule -a mplayer2 state=floating
-bspc rule -a Kupfer.py focus=on
-bspc rule -a Screenkey manage=off
+#! /bin/sh              
+                        
+pgrep -x sxhkd > /dev/null || sxhkd &    
+                        
+bspc monitor HDMI-1  -d I II III IV V VI VII VIII IX X    
+                        
+bspc config border_width         2    
+bspc config window_gap          12    
+                        
+bspc config split_ratio          0.52    
+bspc config borderless_monocle   true    
+bspc config gapless_monocle      true    
+                        
+bspc config right_padding 0        
+bspc config left_padding 0        
+bspc config top_padding 34    
+                        
+bspc config external_rules_command "$HOME/.config/bspwm/rule.sh"    
+                        
+bspc rule -a Gimp desktop='^8' state=floating follow=on    
+bspc rule -a Chromium desktop='^2'    
+bspc rule -a mplayer2 state=floating    
+                        
+#                       
+# Autostart             
+#                       
+                        
+# Set display from arandr saved script    
+xrandr --output HDMI-1 --primary --mode 3440x1440 --pos 0x480 --rotate normal --output HDMI-0 --mode 1920x1080 --pos 3440x0 --rotate left &    
+sleep 1 &               
+                        
+# polybar               
+~/.config/polybar/launch.sh &    
+                        
+# Wallpaper             
+# feh --bg-fill ~/.config/core/wall.jpg &    
+nitrogen --restore &    
+                        
+# Picom                 
+picom --experimental-backends --backend glx --xrender-sync-fence &    
+                        
+# Cursor                
+xsetroot -cursor_name left_ptr &    
+                        
+# Change Keyboard Layout    
+setxkbmap pt &

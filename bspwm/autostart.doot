@@ -1,9 +1,0 @@
-## Keyboard Settings, Mapping & Layout
-# xmodmap -e "keysym Insert = Multi_key" &
-setxkbmap -layout us,pt -option grp:menu_toggle,grp_led:scroll &
-# setxkbmap -option terminate:ctrl_alt_bksp &
-# setxkbmap -option compose:ralt &
-xset r rate 500 30 &
-
-## Mouse Pointer Speed
-xset m 30/10 1 &

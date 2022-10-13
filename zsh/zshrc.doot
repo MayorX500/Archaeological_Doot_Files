@@ -1,30 +1,47 @@
-source ~/.dotfiles/zsh/alias.zsh
-source ~/.dotfiles/zsh/plugins.zsh
-source ~/.zprofile
-
-autoload -U colors && colors 
-autoload -Uz compinit
-
-setopt autocd
-unsetopt nomatch #if there is no match using globs, it is not expanded
-
-zstyle :compinstall filename "~/.zshrc"
-zstyle ':completion:*' menu select # highlights options of completion 
-
-compinit
-
-#Prompt
-setopt PROMPT_SUBST
-export PROMPT=' %{$fg[red]%}%c %{$fg[cyan]%}ん %{$reset_color%}'
-
-# History
-HISTSIZE=100000
-SAVEHIST=100000
-HISTFILE=~/.zsh_history 
-setopt appendhistory     #Append history to the history file (no overwriting)
-setopt sharehistory      #Share history across terminals
-setopt incappendhistory  #Immediately append to the history file, not just when a term is killed
-
-
-bindkey "^?" backward-delete-char # fixes problem in vi mode when you  want to delete using backspace after leaving normal mode
-bindkey -v # use vi mode
+source ~/.config/zsh/alias.zsh    
+source ~/.config/zsh/plugins.zsh    
+source ~/.config/zsh/zprofile.zsh    
+    
+autoload -U colors && colors     
+autoload -Uz compinit    
+    
+setopt autocd    
+unsetopt nomatch #if there is no match using globs, it is not expanded    
+    
+zstyle :compinstall filename "~/.zshrc"    
+zstyle ':completion:*' menu select # highlights options of completion     
+    
+compinit    
+    
+#Prompt    
+setopt PROMPT_SUBST    
+export PROMPT=' %{$fg[red]%}%c %{$fg[cyan]%}ん %{$reset_color%}'    
+    
+# History    
+HISTSIZE=100000    
+SAVEHIST=100000    
+HISTFILE=$ZSHDIR/history.zsh    
+setopt appendhistory     #Append history to the history file (no overwriting)    
+setopt sharehistory      #Share history across terminals    
+setopt incappendhistory  #Immediately append to the history file, not just when a term is killed    
+    
+bindkey "^[[3~" delete-char    
+bindkey "^?" backward-delete-char # fixes problem in vi mode when you  want to delete using backspace after leaving normal mode    
+bindkey '^R' history-incremental-search-backward    
+    
+bindkey -v # use vi mode    
+    
+# >>> conda initialize >>>    
+# !! Contents within this block are managed by 'conda init' !!    
+#__conda_setup="$('/home/miguel/.anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"    
+#if [ $? -eq 0 ]; then    
+#    eval "$__conda_setup"    
+#else    
+#    if [ -f "/home/miguel/.anaconda3/etc/profile.d/conda.sh" ]; then    
+#        . "/home/miguel/.anaconda3/etc/profile.d/conda.sh"    
+#    else    
+#        export PATH="/home/miguel/.anaconda3/bin:$PATH"    
+#    fi    
+#fi    
+#unset __conda_setup    
+# <<< conda initialize <<<

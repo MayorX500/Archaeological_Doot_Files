@@ -1,0 +1,38 @@
+# Config file for NBS_Palette
+
+#Colors.
+Color1_L = #FF9C87
+Color2_L = #E78480
+Color3_L = #CB6978
+Color4_L = #985262
+Color5_L = #6C3F4F
+Color6_L = #352638
+Color7_L = #0F1527
+
+Color1_D = #87EAFF
+Color2_D = #80E3E7
+Color3_D = #69CBBC
+Color4_D = #529888
+Color5_D = #3F6C5C
+Color6_D = #293826
+Color7_D = #27210F
+
+* {    
+        background-color: transparent;    
+        background-black: #0F1527;    
+        accent-color: #FF9C87;    
+        color: #80E3E7;    
+        prompt-color: #0F1527;    
+        font: "Firacode 10";    
+}    
+
+background = #0F1527    
+background-alt = #35263821    
+accent_dark = ${background-alt}    
+accent_light = ${background-alt}    
+foreground = #87EAFF    
+foreground-alt = #CB6978    
+primary = #FF9C87    
+secondary = #69CBBC    
+alter1 = #87EAFF    
+alter2 = #87EAFF
